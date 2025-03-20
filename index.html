@@ -73,7 +73,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 50vh;
+      height: 65vh;
       padding: 2rem;
     }
 
@@ -224,19 +224,29 @@
     <div class="hero-content">
       <p>Data Scientist focused on AI, Economics, and Finance.</p>
 
-      <p>Welcome. This space is where I share my thoughts on topics that interest me—mostly around Artificial
-        Intelligence, Economics, and Finance, along with the occasional fun project.
+      <p>	Welcome. This space is where I share my thoughts on topics that interest me—mostly around Artificial Intelligence, Economics, and Finance, along with some things I’ve built along the way. I’ve always been curious about how things work, especially complex systems like markets, human behavior, and AI.</p>
 
-        I’ve always been curious about how things work, especially complex systems like markets, human behavior, and
-        machine learning models. While many say learning comes easily when you’re passionate about something, I’ve found
-        that going deep into any subject often takes time, effort, and patience. For me, understanding something
-        meaningful is rarely quick—but the process itself has its own rewards.</p>
+      <p>That curiosity has led me to explore these topics in depth. And while many say learning comes easily when you’re passionate about something, I’ve found that going deep into any subject often takes time, effort, and patience. For me, understanding something meaningful is rarely quick—but the process itself has its own rewards.
+      </p>
+      <p>	Thanks for stopping by—I hope you find something here that sparks your curiosity.</p>
 
-      <ul class="social-link">
-        <li><a href="#" class="icon-box"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-        <li><a href="#" class="icon-box"><ion-icon name="logo-twitter"></ion-icon></a></li>
-        <li><a href="#" class="icon-box"><ion-icon name="mail-outline"></ion-icon></a></li>
-      </ul>
+        <ul class="social-link">
+          <li>
+            <a id="linkedin-link" target="_blank" class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a id="twitter-link" target="_blank" class="icon-box">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a id="email-link" class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
     </div>
   </section>
 
@@ -339,7 +349,12 @@
       }
     }
   </script>
-
+<script>
+  // Assign links from config.js to your social buttons
+  document.getElementById("linkedin-link").href = SOCIAL_LINKS.linkedin;
+  document.getElementById("twitter-link").href = SOCIAL_LINKS.twitter;
+  document.getElementById("email-link").href = SOCIAL_LINKS.email;
+</script>
 </body>
 
 </html>
